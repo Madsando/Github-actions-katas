@@ -49,7 +49,6 @@ jobs:
        with:
          name: Code
          path: .
-         include-hidden-files: true
      - name: build docker
        run: bash ci/build-docker.sh
      - name: push docker

@@ -4,12 +4,9 @@ on: [workflow_dispatch]
 
 jobs:
   call-workflow:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Reuse workflow
-        uses: ./.github/workflows/reusable.yml
-        with:
-          who-to-greet: '@octocat'
+    uses: ./.github/workflows/reusable.yml
+    with:
+      who-to-greet: '@octocat'
 
   use-output:
     runs-on: ubuntu-latest

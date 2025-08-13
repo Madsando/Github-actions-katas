@@ -30,7 +30,6 @@ jobs:
         with: 
           name: Code
           path: .
-          include-hidden-files: true
       - name: Linting
         uses: super-linter/super-linter/slim@v8
         env:
